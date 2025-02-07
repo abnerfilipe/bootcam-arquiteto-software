@@ -1,6 +1,6 @@
 import { IRepository } from '../interfaces/repository.interface';
 import { RepositoryError } from '../utils/repositoryError';
-import ServiceError from '../utils/ServiceError';
+import ServiceError from '../utils/serviceError';
 
 
 export class BaseService<T> {
