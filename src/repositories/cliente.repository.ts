@@ -14,8 +14,8 @@ export class ClienteRepository implements IRepository<ICliente> {
     return await Cliente.find({});
   }
 
-  async update(id: string, cliente: ICliente): Promise<ICliente | null> {
-    return await Cliente.findByIdAndUpdate(id, cliente, { new: true });
+  async update(id: string, cliente: ICliente): Promise<ICliente> {
+    return await Cliente.findByIdAndUpdate(id, cliente, { new: true }) as ICliente;
   }
 
   async delete(id: string): Promise<boolean> {

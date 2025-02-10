@@ -28,7 +28,7 @@ const ClienteSchema = new mongoose.Schema({
     required: true 
   }
 }, {
-  timestamps: true // Adiciona automaticamente createdAt e updatedAt
+  timestamps: true 
 });
 
 export default mongoose.model<ICliente>('Cliente', ClienteSchema);
